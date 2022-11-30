@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+@keyframes slide-in-blurred-top {
+    0% {
+      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #030914;
+}
+
+button{
+    font-family: 'Inter', sans-serif;
+}
+
+.top img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.top{
+    max-width: 85%;
+    margin: 5% 0 0 5%;
+}
+
+.top h3{
+    padding: 1rem 0 1rem 0;
+    font-size: 36px;
+    color: white;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.top p{
+    padding: 1rem 0rem 1rem 0rem;
+    font-size: 18px;
+    color: #859dc3;
+}
+
+.top button{
+    padding: .5rem 1rem .5rem 1rem;
+    font-family: 'Inter', sans-serif;
+    border-radius: 10px;
+    border: 0px;
+    background-color: violet;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.top button:hover{
+    transform: scale(1.2);
+    color: #3A3F;
+    background-color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.techs{
+    max-width: 85%;
+    margin: 5% 0 0 5%;
+}
+
+.container button{
+    color: #9475fd;
+    background-color: #0d0937; 
+    border: none;
+    padding: 5px 45px;
+}
+
+.brands{
+    display: flex;
+}
+
+.brands img{
+    width: 100px;
+    margin: 2% 2%;
+    filter: invert(100%) sepia(0%) saturate(7495%) hue-rotate(182deg) brightness(110%) contrast(100%);
+}
+
+.projects{
+    max-width: 85%;
+    margin: 5% 0 0 5%;
+}
+
+.projects button{
+    color: chartreuse;
+    background-color: darkgreen; 
+    border: none;
+    padding: 5px 55px;
+}
+
+.card-project{
+    display: flex;
+    align-items: center;
+    background-color: #050f1f;
+    border: 1px solid #9475fd;
+    border-radius: 15px;
+    margin: 2% 0;
+}
+
+.card-project p{
+    color: #859dc3;
+    font-size: 18px;
+    margin: 0 2%;
+}
+
+.card-project img{
+    width: 25%;
+    filter: invert(100%) sepia(0%) saturate(7495%) hue-rotate(182deg) brightness(110%) contrast(100%);
+}
+
+.bottom{
+    max-width: 85%;
+    margin: 5% 0 0 5%;
+}
+
+.boxes{
+    display: flex;
+    gap: 2rem;
+}
+
+.boxes div{
+    width: 50%;
+}
+
+.about h3{
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 0rem 1rem 1rem;
+}
+
+.about p{
+    color: #859dc3;
+    font-size: 16px;
+    margin: 0rem 0rem 2rem 1rem;
+}
+
+.contact{
+    background: #050f1f;
+    border-radius: 20px;
+    border: 1px solid #5c8dd9;
+    padding: 1rem 0rem 1rem 1rem;
+}
+
+.contact h3{
+    color: white;
+    font-size: 1.5rem;
+    padding-top: .5rem;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+}
+
+.contact span{
+    color: #859dc3;
+    font-size: 1rem;
+    padding-left: 3rem;
+}
+
+.contact a{
+    display: block;
+    padding-top: .5rem;
+    padding-left: 3rem;
+    text-decoration: none;
+    color: #75fd7f;
+}
+
+.bottom button{
+    color: orangered;
+    background-color: orange; 
+    opacity: 70%;
+    border: none;
+    padding: 5px 55px;
+}
+
+.megaicon{
+    display: flex;
+}
+
+.megaicon img{
+    width: 35px;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    filter: invert(100%) sepia(0%) saturate(7495%) hue-rotate(182deg) brightness(110%) contrast(100%);
+}
+
+.megaicon img:first-of-type{
+    margin-left: 3rem;
+}
